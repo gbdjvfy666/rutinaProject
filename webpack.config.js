@@ -9,6 +9,10 @@ module.exports = {
     clean: true,
   },
   plugins: [new HtmlWepackPlugin()],
+  devServer: {
+    static: './dist',
+    hot: true,
+  },
   module: {
     rules: [
       {
